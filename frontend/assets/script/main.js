@@ -1,4 +1,9 @@
 
+// Configuration
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:5001'
+    : 'https://whytrip-backend-production.up.railway.app';
+
 function myFunction() {
     var x = document.getElementById("myInput");
     var y = document.getElementById("hide");
@@ -71,7 +76,7 @@ function initCarousels(selector) {
 // Fetch destinations if we are on the page with popular destinations
 const popularContainer = document.getElementById('popular-destinations-carousel');
 if (popularContainer) {
-    fetch('http://localhost:5001/api/destinations')
+    fetch(`${API_BASE_URL}/api/destinations`)
         .then(res => res.json())
         .then(data => {
             let htmlHTML = '';
@@ -116,7 +121,7 @@ const destinationId = urlParams.get('id');
 
 const detailTitle = document.getElementById('detail-title');
 if (destinationId && detailTitle) {
-    fetch(`http://localhost:5001/api/destinations/${destinationId}`)
+    fetch(`${API_BASE_URL}/api/destinations/${destinationId}`)
         .then(res => res.json())
         .then(data => {
             if (data && !data.error) {
@@ -152,7 +157,7 @@ function fetchReviews(destId) {
     const reviewsContainer = document.getElementById('detail-reviews');
     if (!reviewsContainer) return;
 
-    fetch(`http://localhost:5001/api/destinations/${destId}/reviews`)
+    fetch(`${API_BASE_URL}/api/destinations/${destId}/reviews`)
         .then(res => res.json())
         .then(reviews => {
             if (reviews.error || !Array.isArray(reviews)) {
@@ -244,7 +249,7 @@ if (reviewForm) {
             const urlParams = new URLSearchParams(window.location.search);
             const destId = urlParams.get('id');
 
-            const response = await fetch(`http://localhost:5001/api/destinations/${destId}/reviews`, {
+            const response = await fetch(`${API_BASE_URL}/api/destinations/${destId}/reviews`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -291,7 +296,7 @@ if (reviewForm) {
 // Fetch all destinations for list-wisata.html
 const allDestinationsContainer = document.getElementById('all-destinations-container');
 if (allDestinationsContainer) {
-    fetch('http://localhost:5001/api/destinations')
+    fetch(`${API_BASE_URL}/api/destinations`)
         .then(res => res.json())
         .then(data => {
             const urlParams = new URLSearchParams(window.location.search);
@@ -339,7 +344,7 @@ if (allDestinationsContainer) {
 // Fetch grouped regions for list-daerah.html
 const regionsContainer = document.getElementById('regions-container');
 if (regionsContainer) {
-    fetch('http://localhost:5001/api/destinations')
+    fetch(`${API_BASE_URL}/api/destinations`)
         .then(res => res.json())
         .then(data => {
             const regionMaps = {};
@@ -404,7 +409,7 @@ if (registerForm) {
         submitBtn.disabled = true;
 
         try {
-            const response = await fetch('http://localhost:5001/api/auth/register', {
+            const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -505,7 +510,7 @@ if (loginForm) {
         submitBtn.disabled = true;
 
         try {
-            const response = await fetch('http://localhost:5001/api/auth/login', {
+            const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -555,7 +560,7 @@ if (btnSearch) {
 // Fetch regions for index.html carousel
 const regionsCarouselContainer = document.getElementById('regions-carousel-container');
 if (regionsCarouselContainer) {
-    fetch('http://localhost:5001/api/destinations')
+    fetch(`${API_BASE_URL}/api/destinations`)
         .then(res => res.json())
         .then(data => {
             const regionMaps = {};
@@ -589,7 +594,7 @@ if (regionsCarouselContainer) {
 // Fetch Testimonials for index.html carousel
 const testimonialContainer = document.getElementById('testi-card');
 if (testimonialContainer) {
-    fetch('http://localhost:5001/api/reviews')
+    fetch(`${API_BASE_URL}/api/reviews`)
         .then(res => res.json())
         .then(data => {
             if (data.length === 0) {

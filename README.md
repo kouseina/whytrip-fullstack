@@ -45,6 +45,19 @@ The server will run on `http://localhost:5001`.
 ### 3. Frontend
 Open `frontend/index.html` in your browser (Live Server recommended).
 
+## Deployment
+
+Proyek ini dirancang untuk dideploy menggunakan model **Hybrid**:
+- **Frontend**: [Vercel](https://vercel.com/) (Gratis, Cepat, Optimized for static assets).
+- **Backend**: [Railway](https://railway.app/) (Terintegrasi dengan PostgreSQL, Handal untuk Node.js).
+
+### Ringkasan Langkah Deploy:
+1.  **Backend**: Deploy folder `backend` ke Railway, set variabel `.env` di dashboard Railway.
+2.  **Konfigurasi**: Update `API_BASE_URL` di `frontend/assets/script/main.js` dengan URL dari Railway.
+3.  **Frontend**: Deploy folder `frontend` ke Vercel.
+
+Untuk panduan detail, lihat [deployment_guide.md](file:///Users/kouseina/.gemini/antigravity/brain/6f31c832-54e1-42ae-a43d-34f819e4ca10/deployment_guide.md).
+
 ## Features
 - **Dynamic Content:** Destinations and regions are fetched from the API.
 - **Authentication:** Register and Login with JWT security.
