@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whytrip</title>
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+    <!--Font Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand mr-auto">
+                <img src="assets/img/Logo.png" alt="Whytrip">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navb">
+                <span class="navbar-toggler-icon hamburger"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-around" id="navb">
+                <ul class="navbar-nav ">
+                    <li class="nav-item mx-md-2">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="list-daerah.html" class="nav-link">Location</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="about.html" class="nav-link">Tentang</a>
+                    </li>
+                </ul>
+
+                <!--Mobile Button-->
+                <form class="form-inline d-sm-block d-md-none" id="auth-mobile">
+                    <a href="register.html"><button class="btn btn-register my-2 my-sm-0 px-4">
+                            Register
+                        </button></a>
+
+                    <button class="btn btn-login my-2 my-sm-0 px-4">
+                        <a href="login.html">Login</a>
+                    </button>
+                </form>
+            </div>
+
+            <!--Desktop Button-->
+            <form class="form-inline my-2 my-lg-0 d-none d-md-block" id="auth-desktop">
+                <button class="btn btn-register my-2 my-sm-0 px-4 mr-3">
+                    <a href="register.html">Register</a>
+                </button>
+                <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                    <a href="login.html">Login</a>
+                </button>
+            </form>
+
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center index">
+        <h1 class="mt-4">
+            Cari Tempat Wisata
+            <br>
+            Dengan Mudah
+        </h1>
+        <div class="d-flex justify-content-center desc">
+            <p class="mt-4">
+                Temukan berbagai tempat wisata yang berkualitas dengan informasi
+                yang lengkap supaya kamu bisa menikmati liburanmu
+            </p>
+        </div>
+
+    </header>
+
+    <!--Content-->
+    <main>
+        <!--jenis wisata-->
+        <div class="container">
+            <section class="section-stats row justify-content-center col-md-7 ml-5 mb-5" id="stats">
+                <div class="input-group">
+                    <select class="dropdown-toggle jenis-wisata col-sm col-md-4 mt-2" id="search-type">
+                        <option selected value="">Jenis Wisata</option>
+                        <option value="Wisata Alam">Wisata Alam</option>
+                        <option value="Wisata Pantai">Wisata Pantai</option>
+                        <option value="Wisata Religi">Wisata Religi</option>
+                        <option value="Wisata Kuliner">Wisata Kuliner</option>
+                    </select>
+                    <select class="dropdown-toggle lokasi-wisata col-md-4" id="search-location">
+                        <option selected value="">Lokasi Wisata</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Papua">Papua</option>
+                    </select>
+
+                    <div class="input-group-append col-sm-12 col-md-4 my-3 col-sm-auto">
+                        <button class="btn btn-cari" type="button" id="btn-search">Cari Tempat</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--brand-->
+        <div class="container">
+            <div class="brand mt-5">
+                <h2 class="mb-4">Agen wisata kami</h2>
+                <div class="brand-image d-flex justify-content-around mb-5">
+                    <div class="item-brands"><img src="assets/img/agen-google.png" alt=""></div>
+                    <div class="item-brands"><img src="assets/img/agen-airbnb.png" alt=""></div>
+                    <div class="item-brands"><img src="assets/img/agen-traveloka.png" alt=""></div>
+                    <div class="item-brands"><img src="assets/img/agen-tiket.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Section Popular-->
+        <section class="section-popular mt-5" id="popular">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col section-popular-heading">
+                        <h2 class="mt-5 mb-3 title">Destinasi Popular</h2>
+                        <p>Ini adalah list destinasi wisata paling favorit di Indonesia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-popular-content " id="popular-content">
+            <div class="container">
+                <div class="section-popular-travel row justify-content-center mt-4 owl-carousel owl-theme"
+                    id="popular-destinations-carousel">
+                    <!-- Data wisata akan diload secara dinamis dari API -->
+                </div>
+            </div>
+            </div>
+            <div class="input-group-append col-md-12 my-4 justify-content-center">
+                <a href="list-popular.html">
+                    <button class="btn btn-detail" type="button">Lihat Semua</button>
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <!--Section List-->
+        <section class="section-popular mt-5" id="list">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col section-popular-heading">
+                        <h2 class="mt-2 mb-2 title">List Daerah</h2>
+                        <p>Ini adalah list provinsi/daerah tempat wisata di Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-popular-content" id="list-content">
+            <div class="container">
+                <div class="section-popular-travel row justify-content-center mt-4 owl-carousel owl-theme"
+                    id="regions-carousel-container">
+                    <!-- Dynamic Regions Content -->
+                </div>
+            </div>
+            </div>
+            <div class="input-group-append col-md-12 my-4 mb-5 justify-content-center">
+                <a href="list-daerah.html">
+                    <button class="btn btn-detail" type="button">Lihat Semua</button>
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <!--Section Testimoni-->
+        <section class="section-testimonial-heading" id="testimonialHeading">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Testimoni</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimonial-content mt-3 ml-4" id="testimonial-content">
+            <div class="container">
+                <div class="section-popular-travel testi row slider owl-carousel owl-theme justify-content-between"
+                    id="testi-card">
+                    <!-- Dynamic Testimonial Content -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="section-footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-5">
+                    <div class="row row-list mt-5 pt-5 ml-5">
+                        <div class="col-12 col-lg-4">
+                            <img src="assets/img/Logo-1.png" alt="">
+                            <ul class="list-unstyled">
+                                <li class="jalan mt-3">
+                                    Designer: Mochammad Hakim H
+                                <li>
+                                <li class="jalan ">
+                                    Frontend: Alfina Balqis N
+                                <li>
+                                <li class="jalan ">
+                                    Backend: Daffa Putera K
+                                <li>
+                                    <ul class="list-unstyled sosmed mt-3">
+                                        <a href="https://www.facebook.com/" class="mr-3"><img
+                                                src="assets/img/fb.png"></a>
+                                        <a href="https://twitter.com/" class="mr-3"><img src="assets/img/tw.png"></a>
+                                        <a href="https://www.linkedin.com/" class="mr-3"><img
+                                                src="assets/img/in.png"></a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-lg-3">
+                            <h5>NAVIGATION</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>ABOUT US</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Agen</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-2">
+                            <h5>CONTACT</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">0822 3498 1535</a></li>
+                                <li><a href="#">halo@why.trip</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <section class="copyright mt-5 mb-5 text-center">&#x24B8; Copyright 2020 whytrip</section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+
+</html>

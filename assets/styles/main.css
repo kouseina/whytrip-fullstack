@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+
+body {
+  background-color: #fff;
+  font-family: 'Mulish', sans-serif;
+  color: #666666;
+  overflow-x: hidden;
+}
+
+select{
+  border: none;
+}
+
+button{
+  border-radius: 8px !important;
+  width: 148px;
+  height: 48px;
+  font-weight: 700;
+}
+
+button a, button a:hover, button a:focus{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+  text-decoration: none !important;
+}
+
+h2{
+  color: #858A8F;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h2.title{
+  font-weight: 700;
+  color: #333333;
+  font-size: 30px;
+}
+
+h3{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.navbar-light{
+  margin-top: 1.5em;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-nav{
+  margin-left: -5em !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.nav-item a:hover{
+  color: #ff973f !important;
+}
+
+.navbar-collapse{
+  margin-left: 13em !important;
+}
+
+.btn-register {
+  background: transparent;
+  color: #FF9737;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.btn-register:hover {
+  color: #ffffff;
+  border: 1px solid #FF9737;
+  font-weight: 700;
+}
+
+.btn-login {
+  background-color: #FF9737;
+  color: #fff;
+  width: 148px;
+  height: 48px;
+}
+
+.btn-login:hover {
+  background-color: #FF9737;
+  color: #ffffff;
+}
+
+header{
+  padding: 180px 0px 165px;
+  margin-top: -90px;
+  background-size: cover;
+  color: #fff;
+}
+
+header.index {
+  background-image: url('../img/header.png');
+  height: 105vh;
+}
+
+header.about-us{
+  background-image: url('../img/header-about.png');
+  height: 85vh;
+}
+
+
+header h1{
+  font-size: 64px;
+  font-weight: 800;
+}
+
+header p {
+  font-size: 18px;
+  width: 50% !important;
+  justify-content: center !important;
+  
+}
+
+.brand{
+  margin-top: 13em !important;
+}
+
+.brand-image{
+  margin-top: 2em !important;
+  display: flex;
+  flex-direction: row;
+  margin-left: -4em !important;
+}
+
+.section-stats {
+  margin-top: -15em;
+  background-color: #fff;
+  margin-left: 15em !important;
+  margin-right: 2em !important;
+  border-radius: 8px !important;
+  height: 100px;
+}
+
+.btn-cari{
+  margin-left: 2em !important;
+  margin-top: 0.25em !important;
+  background-color: #FF9737;
+  color: #ffffff;
+  height: 60px;
+}
+
+.owl-nav{
+  position: absolute;
+  top: -7em !important;
+  right: 0;
+}
+
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
+  background: none !important;
+  outline: none !important;
+  opacity: 1;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next{
+  outline: none;
+  opacity: 0.6;
+  transition: all .5s ease;
+  width: 0px !important;
+  height: 0px !important;
+  margin: 2em !important;
+}
+
+img.img-arrow {
+  width: 18px !important;
+}
+
+.section-popular-heading p {
+font-size: 18px;
+color: #333333;
+}
+
+.section-popular-content .section-popular-travel .card-travel {
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+  border-radius: 8px !important;
+}
+
+.travel-content h3{
+  font-size: 30px;
+}
+  
+.travel-content p{
+  font-size: 18px;
+}
+
+.travel-content span{
+  color: #777777;
+}
+
+.travel-content img{
+  width: 24px !important;
+  height: 24px !important;
+}
+ 
+.travel-text, .travel-content{
+  margin-top: 18em !important;
+}
+    
+.travel-text p{
+  color: #dddddd;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.btn-detail{
+  width: 260px;
+  height: 60px;
+  margin-top: 1em !important;
+  background-color: #fff;
+  border: 2px solid #FF9737;
+  color: #FF9737;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.btn-detail:hover{
+  background-color: #ff973f;
+  color: #fff;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+#list-content{
+  margin-bottom: 10em !important;
+}
+
+/* Testimonial */
+#testimonialHeading h2{
+  font-weight: 700;
+  color: #333333;
+  font-size: 30px;
+  margin-top: -2em !important;
+}
+
+.card-testimonial{
+  border-radius: 8px !important;
+  border-radius: 8px !important;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.card-testimonial.active, .card-testimonial:hover{
+  border: 1px solid #ff973f;
+}
+
+.card-testimonial.content{
+  font-size: 18px;
+  color: #333333;
+}
+
+.card-testimonial.content p{
+  margin-top: 2em !important;
+  line-height: 2 !important;
+  text-align: left;
+}
+
+.person{
+  display: flex;
+  flex-direction: row;
+}
+
+.name{
+  color: #373737;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.job{
+  color: #777777;
+  font-size: 12px;
+  margin-top: -1em !important;
+}
+
+/* footer */
+.section-footer {
+  margin-top: -3em !important;
+  color: #333333;
+  margin-left: -7em !important;
+}
+
+.section-footer .row-list {
+  margin-top: 120px !important;
+}
+
+.section-footer h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.section-footer ul li.jalan{
+  color: #777777;
+}
+
+.section-footer li {
+  margin-bottom: 10px;
+}
+
+.section-footer a {
+  color: #333333;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.section-footer .copyright {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* About us page */
+.agen-content-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-agen{
+  margin-left: -1em !important;
+  border: none !important;
+}
+
+.card-body{
+  margin-top: -.75em !important;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  padding: 0 !important;
+}
+
+.card-text {
+  margin-bottom: 0.75em !important;
+}
+
+.card-text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.card-text.email{
+  font-weight: 600 !important;
+  color: #777777;
+}
+
+.about-footer{
+  margin-top: -5em !important;
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .navbar-light{
+    margin-top: 0 !important;
+  }
+
+  .navbar-brand img{
+    margin-top: 1em !important;
+    padding-bottom: .5em ;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0 !important;
+    padding-bottom: 0.5em !important;
+    color: #333333;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #333333 !important;
+  }
+
+  .navbar-collapse{
+    position: relative;
+    height: 20em !important;
+  }
+  
+  .navbar-collapse ul li a {
+    margin-top: 0.5em !important;
+    margin-left: -8em !important;
+    color: #333333 !important;
+    display: flex;
+    flex-direction: row;
+  }
+
+  button.navbar-toggler{
+    margin-top: 1em !important;
+    border-style: none !important;
+  }
+
+  .form-inline{
+    margin-top: 1em !important;
+    margin-left: -13em !important;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-light .navbar-toggler-icon {   
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    float: right;
+    margin-right: 0.25em !important;
+  }
+
+  .btn-register {
+    margin-left: 0 !important;
+    margin-right: 1em !important;
+    border: 1px solid #ff973f;
+  }
+
+  .btn-register:hover{
+    font-weight: normal;
+    color: #333333;
+  }
+
+  header{
+    background-position: center !important;
+    width: 100% !important;
+  }
+
+  header.index{
+    height: 110vh !important;
+  }
+
+  header.index h1{
+    margin-top: -1em !important;
+    font-size: 32px;
+  }
+
+  header p{
+    font-size: 14px;
+    width: 80% !important;
+
+  }
+
+  .section-stats {
+    margin-top: -20em !important;
+    margin-left: 0 !important;
+    height: 150px !important;
+  }
+
+  .dropdown-toggle{
+    margin-bottom: 1em !important;
+    height: 58px !important;
+    border: none !important;
+    background: transparent;
+  }
+
+  .btn-cari{
+    /* width: 21.5em !important; */
+    width: 83vh;
+    margin-left: -1.75em !important;
+    margin-right: -5em !important;
+    height: 58px !important;
+  }
+
+  .btn-detail{
+    width: 68vh;
+    margin-left: -5.5em !important;
+    margin-right: -5em !important;
+    height: 58px !important;
+  }
+
+  .brand{
+    margin-top: 12em !important;
+  }
+
+  .brand h2{
+    text-align: center;
+    margin-top: 11em !important;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .section-popular-heading{
+    margin-top: 0 !important;
+  }
+
+  .section-popular-heading h2{
+    margin-top: 0 !important;
+    margin-left: .25em;
+    font-size: 20px;
+  }
+
+  .section-popular-heading p {
+    letter-spacing: 0.5px !important;
+    width: 75% !important;
+    margin-left: .5em;
+    font-size: 14px;
+  }
+
+  .brand-image{
+    justify-content: center;
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 5em !important;
+  }
+  .item-brands{
+    margin-top: -1.5em;
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .brand-image img{
+    height: 20px;
+    margin-top: 1em !important;
+    margin-bottom: 1.5em !important;
+  }
+  
+  .owl-nav{
+    top: -7em !important;
+  }
+  
+  .owl-nav .owl-prev, .owl-nav .owl-next{
+    margin:1em !important;
+  }
+
+  img.img-arrow {
+    width: 15px !important;
+  }
+
+  #testimonialHeading h2{
+    margin-top: -2.5em !important;
+    margin-left: 0.5em !important;
+  }
+  
+  .section-popular-content .section-popular-travel .card-travel {
+    margin-left: 1em !important;
+    margin-bottom: 0 !important;
+  }
+
+  .card-travel{
+    width: auto;
+    margin-left: 1em;
+    justify-content: center !important;
+  }
+
+  .section-footer .row-list{
+    margin-top: 2em !important;
+    margin-left: 7em !important;
+  }
+
+  ul.sosmed{
+    margin-bottom: 3em !important;
+  }
+
+  section.copyright{
+    margin-left: 8em !important;
+  }
+
+  /* about us page */
+
+  header.about-us{
+    height: 90vh !important;
+  }
+
+  header.about-us h1{
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  #about-us{
+    margin-left: 1em !important;
+  }
+
+  #about-us p{
+    width: 100% !important;
+    margin-top: -.75em !important;
+  }
+
+  .agen-content-cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em !important;
+  }
+
+  .right-cards{
+    margin-left: 0 !important;
+  }
+
+  .card-body{
+    margin-top: .25em !important;
+    margin-left: -1em;
+  }
+
+  .card-title{
+    font-size: 20px;
+  }
+  
+  .card-text {
+    font-size: 15px;
+  }
+
+  .sosmed img{
+    width: 20px;
+  }
+}
