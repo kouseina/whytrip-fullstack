@@ -460,7 +460,7 @@ function checkAuth() {
         // User is logged in
         const loggedInHTML = `
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: none; color: #071C4D; font-weight: bold;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: none; color: #FFFFFF; font-weight: bold;">
                     Halo, ${user.name}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -472,7 +472,7 @@ function checkAuth() {
         // Mobile specific logout button
         const mobileLoggedInHTML = `
             <div class="my-2 mb-4 text-center">
-                <span style="font-weight: bold; color: #071C4D;">Halo, ${user.name}</span>
+                <span style="font-weight: bold; color: #FFFFFF;">Halo, ${user.name}</span>
             </div>
             <button class="btn btn-login my-2 my-sm-0 px-4 w-100" onclick="logout(event)">
                 Logout

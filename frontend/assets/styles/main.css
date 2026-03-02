@@ -7,44 +7,47 @@ body {
   overflow-x: hidden;
 }
 
-select{
+select {
   border: none;
 }
 
-button{
+button {
   border-radius: 8px !important;
   width: 148px;
   height: 48px;
   font-weight: 700;
 }
 
-button a, button a:hover, button a:focus{
+button a,
+button a:hover,
+button a:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-a:hover, a:focus{
+a:hover,
+a:focus {
   text-decoration: none !important;
 }
 
-h2{
+h2 {
   color: #858A8F;
   font-weight: 600;
   font-size: 20px;
 }
 
-h2.title{
+h2.title {
   font-weight: 700;
   color: #333333;
   font-size: 30px;
 }
 
-h3{
+h3 {
   font-size: 36px;
   font-weight: 700;
 }
 
-.navbar-light{
+.navbar-light {
   margin-top: 1.5em;
 }
 
@@ -52,8 +55,8 @@ h3{
   max-height: 40px;
 }
 
-.navbar-nav{
-  margin-left: -5em !important;
+.navbar-nav {
+  margin-left: 0 !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -65,19 +68,24 @@ h3{
   color: #fff !important;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: #ff973f !important;
 }
 
-.navbar-collapse{
-  margin-left: 13em !important;
+.navbar-collapse {
+  margin-left: 0 !important;
 }
 
 .btn-register {
   background: transparent;
-  color: #FF9737;
+  color: #FF9737 !important;
+  border: 1px solid #FF9737 !important;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+.btn-register a {
+  color: #FF9737 !important;
 }
 
 .btn-register:hover {
@@ -98,25 +106,26 @@ h3{
   color: #ffffff;
 }
 
-header{
-  padding: 180px 0px 165px;
-  margin-top: -90px;
+header {
+  padding: 180px 0px 100px;
+  margin-top: -105px;
   background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
 header.index {
   background-image: url('../img/header.png');
-  height: 105vh;
+  min-height: 80vh;
 }
 
-header.about-us{
+header.about-us {
   background-image: url('../img/header-about.png');
   height: 85vh;
 }
 
 
-header h1{
+header h1 {
   font-size: 64px;
   font-weight: 800;
 }
@@ -125,50 +134,52 @@ header p {
   font-size: 18px;
   width: 50% !important;
   justify-content: center !important;
-  
+
 }
 
-.brand{
+.brand {
   margin-top: 13em !important;
 }
 
-.brand-image{
+.brand-image {
   margin-top: 2em !important;
   display: flex;
   flex-direction: row;
-  margin-left: -4em !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .section-stats {
-  margin-top: -15em;
+  margin-top: -50px;
   background-color: #fff;
-  margin-left: 15em !important;
-  margin-right: 2em !important;
+  padding: 20px;
   border-radius: 8px !important;
-  height: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-height: 100px;
 }
 
-.btn-cari{
-  margin-left: 2em !important;
-  margin-top: 0.25em !important;
+.btn-cari {
   background-color: #FF9737;
   color: #ffffff;
-  height: 60px;
+  height: 50px;
+  width: 100% !important;
 }
 
-.owl-nav{
+.owl-nav {
   position: absolute;
   top: -7em !important;
   right: 0;
 }
 
-.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
   background: none !important;
   outline: none !important;
   opacity: 1;
 }
 
-.owl-nav .owl-prev, .owl-nav .owl-next{
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
   outline: none;
   opacity: 0.6;
   transition: all .5s ease;
@@ -182,8 +193,8 @@ img.img-arrow {
 }
 
 .section-popular-heading p {
-font-size: 18px;
-color: #333333;
+  font-size: 18px;
+  color: #333333;
 }
 
 .section-popular-content .section-popular-travel .card-travel {
@@ -194,35 +205,36 @@ color: #333333;
   border-radius: 8px !important;
 }
 
-.travel-content h3{
+.travel-content h3 {
   font-size: 30px;
 }
-  
-.travel-content p{
+
+.travel-content p {
   font-size: 18px;
 }
 
-.travel-content span{
+.travel-content span {
   color: #777777;
 }
 
-.travel-content img{
+.travel-content img {
   width: 24px !important;
   height: 24px !important;
 }
- 
-.travel-text, .travel-content{
+
+.travel-text,
+.travel-content {
   margin-top: 18em !important;
 }
-    
-.travel-text p{
+
+.travel-text p {
   color: #dddddd;
   font-size: 16px;
   font-weight: 600;
 }
 
 
-.btn-detail{
+.btn-detail {
   width: 260px;
   height: 60px;
   margin-top: 1em !important;
@@ -233,26 +245,26 @@ color: #333333;
   transition: 0.4s ease;
 }
 
-.btn-detail:hover{
+.btn-detail:hover {
   background-color: #ff973f;
   color: #fff;
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
 }
 
-#list-content{
+#list-content {
   margin-bottom: 10em !important;
 }
 
 /* Testimonial */
-#testimonialHeading h2{
+#testimonialHeading h2 {
   font-weight: 700;
   color: #333333;
   font-size: 30px;
   margin-top: -2em !important;
 }
 
-.card-testimonial{
+.card-testimonial {
   border-radius: 8px !important;
   border-radius: 8px !important;
   -webkit-transition: 0.4s ease;
@@ -260,33 +272,34 @@ color: #333333;
   cursor: pointer;
 }
 
-.card-testimonial.active, .card-testimonial:hover{
+.card-testimonial.active,
+.card-testimonial:hover {
   border: 1px solid #ff973f;
 }
 
-.card-testimonial.content{
+.card-testimonial.content {
   font-size: 18px;
   color: #333333;
 }
 
-.card-testimonial.content p{
+.card-testimonial.content p {
   margin-top: 2em !important;
   line-height: 2 !important;
   text-align: left;
 }
 
-.person{
+.person {
   display: flex;
   flex-direction: row;
 }
 
-.name{
+.name {
   color: #373737;
   font-weight: 700;
   font-size: 18px;
 }
 
-.job{
+.job {
   color: #777777;
   font-size: 12px;
   margin-top: -1em !important;
@@ -294,9 +307,9 @@ color: #333333;
 
 /* footer */
 .section-footer {
-  margin-top: -3em !important;
+  margin-top: 2em !important;
   color: #333333;
-  margin-left: -7em !important;
+  padding: 40px 0;
 }
 
 .section-footer .row-list {
@@ -308,7 +321,8 @@ color: #333333;
   font-size: 16px;
   margin-bottom: 20px;
 }
-.section-footer ul li.jalan{
+
+.section-footer ul li.jalan {
   color: #777777;
 }
 
@@ -328,21 +342,21 @@ color: #333333;
 }
 
 /* About us page */
-.agen-content-cards{
+.agen-content-cards {
   display: flex;
   flex-direction: row;
 }
 
-.card-agen{
+.card-agen {
   margin-left: -1em !important;
   border: none !important;
 }
 
-.card-body{
+.card-body {
   margin-top: -.75em !important;
 }
 
-.card-title{
+.card-title {
   font-size: 24px;
   font-weight: 700;
   color: #333333;
@@ -353,33 +367,33 @@ color: #333333;
   margin-bottom: 0.75em !important;
 }
 
-.card-text{
+.card-text {
   font-size: 18px;
   font-weight: 400;
   color: #999999;
 }
 
-.card-text.email{
+.card-text.email {
   font-weight: 600 !important;
   color: #777777;
 }
 
-.about-footer{
+.about-footer {
   margin-top: -5em !important;
 }
 
-@media only screen and (max-width: 768px){
-  body{
+@media only screen and (max-width: 768px) {
+  body {
     overflow-x: hidden;
   }
 
-  .navbar-light{
+  .navbar-light {
     margin-top: 0 !important;
   }
 
-  .navbar-brand img{
+  .navbar-brand img {
     margin-top: 1em !important;
-    padding-bottom: .5em ;
+    padding-bottom: .5em;
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -387,40 +401,46 @@ color: #333333;
     padding-bottom: 0.5em !important;
     color: #333333;
   }
-  
+
   .navbar-light .navbar-nav .nav-link.active {
     color: #333333 !important;
   }
 
-  .navbar-collapse{
-    position: relative;
-    height: 20em !important;
+  .navbar-collapse {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    z-index: 1000;
   }
-  
+
   .navbar-collapse ul li a {
     margin-top: 0.5em !important;
-    margin-left: -8em !important;
     color: #333333 !important;
     display: flex;
     flex-direction: row;
   }
 
-  button.navbar-toggler{
+  button.navbar-toggler {
     margin-top: 1em !important;
     border-style: none !important;
   }
 
-  .form-inline{
+  .form-inline {
     margin-top: 1em !important;
-    margin-left: -13em !important;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
-  .navbar-light .navbar-toggler-icon {   
+  .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     float: right;
     margin-right: 0.25em !important;
+  }
+
+  .navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 
   .btn-register {
@@ -429,75 +449,73 @@ color: #333333;
     border: 1px solid #ff973f;
   }
 
-  .btn-register:hover{
+  .btn-register:hover {
     font-weight: normal;
     color: #333333;
   }
 
-  header{
+  header {
     background-position: center !important;
     width: 100% !important;
   }
 
-  header.index{
-    height: 110vh !important;
+  header.index {
+    height: auto !important;
+    padding-top: 180px !important;
+    padding-bottom: 120px !important;
   }
 
-  header.index h1{
-    margin-top: -1em !important;
+  header.index h1 {
     font-size: 32px;
   }
 
-  header p{
+  header p {
     font-size: 14px;
     width: 80% !important;
 
   }
 
   .section-stats {
-    margin-top: -20em !important;
+    margin-top: -50px !important;
     margin-left: 0 !important;
-    height: 150px !important;
+    height: auto !important;
   }
 
-  .dropdown-toggle{
+  .dropdown-toggle {
     margin-bottom: 1em !important;
     height: 58px !important;
     border: none !important;
     background: transparent;
   }
 
-  .btn-cari{
-    /* width: 21.5em !important; */
-    width: 83vh;
-    margin-left: -1.75em !important;
-    margin-right: -5em !important;
+  .btn-cari {
+    width: 100% !important;
+    margin: 0 !important;
     height: 58px !important;
   }
 
-  .btn-detail{
-    width: 68vh;
-    margin-left: -5.5em !important;
-    margin-right: -5em !important;
+  .btn-detail {
+    width: 100% !important;
+    margin: 0 !important;
     height: 58px !important;
   }
 
-  .brand{
+  .brand {
     margin-top: 12em !important;
   }
 
-  .brand h2{
+  .brand h2 {
     text-align: center;
     margin-top: 11em !important;
     font-weight: 600;
     font-size: 16px;
   }
 
-  .section-popular-heading{
+  .section-popular-heading {
     margin-top: 0 !important;
   }
 
-  .section-popular-heading h2{
+  .section-popular-heading h2 {
     margin-top: 0 !important;
     margin-left: .25em;
     font-size: 20px;
@@ -510,7 +528,7 @@ color: #333333;
     font-size: 14px;
   }
 
-  .brand-image{
+  .brand-image {
     justify-content: center;
     flex: 50%;
     display: flex;
@@ -518,104 +536,107 @@ color: #333333;
     flex-direction: row;
     margin-left: 5em !important;
   }
-  .item-brands{
+
+  .item-brands {
     margin-top: -1.5em;
     flex: 50%;
     display: flex;
     flex-direction: row;
   }
 
-  .brand-image img{
+  .brand-image img {
     height: 20px;
     margin-top: 1em !important;
     margin-bottom: 1.5em !important;
   }
-  
-  .owl-nav{
+
+  .owl-nav {
     top: -7em !important;
   }
-  
-  .owl-nav .owl-prev, .owl-nav .owl-next{
-    margin:1em !important;
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    margin: 1em !important;
   }
 
   img.img-arrow {
     width: 15px !important;
   }
 
-  #testimonialHeading h2{
+  #testimonialHeading h2 {
     margin-top: -2.5em !important;
     margin-left: 0.5em !important;
   }
-  
+
   .section-popular-content .section-popular-travel .card-travel {
     margin-left: 1em !important;
     margin-bottom: 0 !important;
   }
 
-  .card-travel{
+  .card-travel {
     width: auto;
     margin-left: 1em;
     justify-content: center !important;
   }
 
-  .section-footer .row-list{
+  .section-footer .row-list {
     margin-top: 2em !important;
     margin-left: 7em !important;
   }
 
-  ul.sosmed{
+  ul.sosmed {
     margin-bottom: 3em !important;
   }
 
-  section.copyright{
-    margin-left: 8em !important;
+  section.copyright {
+    margin-left: 0 !important;
+    text-align: center;
   }
 
   /* about us page */
 
-  header.about-us{
+  header.about-us {
     height: 90vh !important;
   }
 
-  header.about-us h1{
+  header.about-us h1 {
     font-size: 32px;
     font-weight: 800;
   }
 
-  #about-us{
+  #about-us {
     margin-left: 1em !important;
   }
 
-  #about-us p{
+  #about-us p {
     width: 100% !important;
     margin-top: -.75em !important;
   }
 
-  .agen-content-cards{
+  .agen-content-cards {
     display: flex;
     flex-direction: column;
     margin-left: 1em !important;
   }
 
-  .right-cards{
+  .right-cards {
     margin-left: 0 !important;
   }
 
-  .card-body{
+  .card-body {
     margin-top: .25em !important;
     margin-left: -1em;
   }
 
-  .card-title{
+  .card-title {
     font-size: 20px;
   }
-  
+
   .card-text {
     font-size: 15px;
   }
 
-  .sosmed img{
+  .sosmed img {
     width: 20px;
   }
 }
