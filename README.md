@@ -23,8 +23,16 @@ why-trip/
 
 ## Setup Instructions
 
-### 1. Database
-Ensure you have a PostgreSQL database running and a `.env` file inside the `backend/` folder with the `DATABASE_URL`.
+### 1. Database & Environment Variables
+1. Ensure you have a PostgreSQL database running.
+2. Create a `.env` file inside the `backend/` folder. You can use `backend/.env.example` as a template:
+   ```bash
+   cp backend/.env.example backend/.env
+   ```
+3. Update the variables in `.env`:
+   - `PORT`: Server port (default: 5001)
+   - `DATABASE_URL`: Your PostgreSQL connection string
+   - `JWT_SECRET`: A secure string for JWT authentication
 
 ### 2. Backend
 ```bash
